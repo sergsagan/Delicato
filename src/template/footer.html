@@ -1,0 +1,79 @@
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+				<ul>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">Наша команда</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Policy</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">TERMS</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<p>&copy; Компания Delicato</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="hidden">
+	<form id="form" class="form">
+		<h3>Заполните поля</h3>
+		<input type="text" name="name" placeholder="Имя" required/><br>
+		<input type="tel" name="phone" placeholder="Телефон" required/><br>
+		<input type="email" name="email" placeholder="Электронная почта" required/><br>
+		<div class="btn_wrap">
+			<button class="btn btn-popup" type="submit">Отправить</button>
+		</div>
+	</form>
+
+	<form id="form-login" class="form">
+		<h3>Вход</h3>
+		<input type="email" name="email" placeholder="E-mail" required/><br>
+		<label class="left-text"><a href="#form-parol" type="submit" class="popup">Напомнить</a></label>
+		<input type="password" name="password" placeholder="Пароль" required/><br>
+		<label><input type="checkbox">Запомнить</label>
+		<div class="btn_wrap">
+			<button class="btn__form_login btn-popup" type="submit"><img class="key" src="../img/key.png" alt="key">Войти</button>
+			<div><a href="#form-registration" class="popup registr">я не зарегистрирован</a></div>
+		</div>
+
+	</form>
+
+	<form id="form-parol" class="form">
+		<h3>Восстановление пароля</h3>
+		<label class="left-text"><a href="#form-login" class="popup" type="submit">Назад</a></label>
+		<input type="email" name="email" placeholder="E-mail" required/><br>
+		<div class="btn_wrap">
+			<button class="btn__form_parol btn-popup" type="submit"><img class="key" src="../img/key.png" alt="key">Восстановить</button>
+		</div>
+	</form>
+
+	<form id="form-registration" class="form">
+		<h3>Регистрация</h3>
+		<input type="tel"  name="tel" placeholder="7 (___) ___ - __ - __" id="phone" title="Формат:7 (999) 999-99-99" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"  required /><br>
+		<input type="email"  name="email" placeholder="E-mail" required/><br>
+		<input type="text" name="name" placeholder="Ваше имя" required/><br>
+		<div class="btn_wrap">
+			<button type="submit" class="btn btn__form_login btn-popup" disabled="disabled" name="btnsend">Зарегистрироваться</button>
+			<input type="hidden" name="valTrFal" class="valTrFal" value="valTrFal_disabled">
+		</div>
+		<label><input type="checkbox">Я согласен с <a href="#modal" data-toggle="modal" data-target="#modal">условиями передачи информации</a></label>
+	</form>
+
+</div>
+<div id="modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" type="button" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Условия передачи информации</h4>
+			</div>
+			<div class="modal-body">
+				<p>Я согласен на обработку персональных данных в соответствии с ФЗ РФ от 27.07.2006 г. № 152-ФЗ (в ред. 25.07.2011 г.) «О персональных данных», а также с Политикой конфиденциальности и условиями договора публичной оферты</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/main.js"></script>

@@ -1,0 +1,505 @@
+@import "variables";
+
+.content{
+
+  .section{
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
+
+  .advantages{
+
+	h2 {
+	  padding-bottom: 60px;
+	  padding-top: 30px;
+	  @extend .h2
+	}
+	.col-lg-4{
+	  padding-right:0;
+	  padding-left: 0;
+
+	  .advantages__item_order {
+		background: url("../../img/item_order.png") no-repeat center center;
+	  }
+	  .advantages__item_go {
+		background: url("../../img/item_go.png") no-repeat center center;
+	  }
+
+	  .advantages__item_delivery {
+		background: url("../../img/item_delivery.png") no-repeat center center;
+	  }
+
+	  .advantages__item_order, .advantages__item_go, .advantages__item_delivery {
+		width: $layout-width;
+		max-width: 532px;
+		height: 341px;
+		position: relative;
+
+		a{
+
+		  h4{
+			font-family: "PlayRegular", sans-serif;
+			color: $select-content-color;
+			font-size: $font-size-h4;
+			font-weight: 400;
+			line-height: 38px;
+			text-align: center;
+		  }
+
+		}
+
+	  }
+	}
+
+	.btn_wrap{
+	  margin-top: 50px;
+	  @extend .btn_wrap;
+
+	  .btn, .btn:visited{
+		padding: 12px 38px;
+		border: none;
+		border-radius: 5px;
+		background: $select-base-color;
+		outline: none !important;
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		font-family: Exo2Regular, sans-serif;
+		color: $select-content-color;
+		font-size: $font-size-h4;
+		text-align: center;
+		-webkit-transition: 0.75s;
+		transition: 0.75s;
+		@extend .menu-style;
+
+		&:hover, &:focus{
+		  background: lighten($select-base-color,10%);
+		  color: $select-content-color;
+		}
+
+		&:active {
+		  background: darken($select-base-color,10%);
+		}
+	  }
+
+	  .cost{
+		margin-top: 30px;
+		margin-bottom: 20px;
+	  }
+	}
+
+  }
+
+  .news{
+	padding-top: 50px;
+	background-color: #f1f1f1;
+
+	h2{
+	  padding-bottom: 50px;
+	  @extend .h2
+	}
+
+
+	.paddings{
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+	.carousel-indicators {
+	  position: absolute;
+	  bottom: 10px;
+	  left: 50%;
+	  z-index: 15;
+	  width: 60%;
+	  margin-left: -30%;
+	  padding-left: 0;
+	  list-style: none;
+	  text-align: center;
+
+	  li {
+		display: inline-block;
+		width:  21px;
+		height: 23px;
+		margin: 1px;
+		text-indent: -999px;
+		background-image: url("../../img/point.png");
+		background-repeat: no-repeat;
+		cursor: pointer;
+
+		background-color: #000 \9; // IE8
+		background-color: rgba(0,0,0,0); // IE9
+	  }
+	  .active {
+		margin: 0;
+		width:  21px;
+		height: 23px;
+		background-image: url("../../img/point_active.png");
+		background-repeat: no-repeat;
+	  }
+	}
+	.carousel-inner{
+	  position: relative;
+
+	  .item{
+
+		h3.header_carousel{
+		  position: absolute;
+		  top: 190px;
+		  font-family: "Exo2Medium", sans-serif;
+		  color: $select-slide-color;
+		  font-size: $font-size-h2;
+		  font-weight: 500;
+		  line-height: 45px;
+		  text-transform: uppercase;
+		  text-align: center;
+		  z-index: 10;
+		  width: 100%;
+		}
+
+	  }
+	}
+	.carousel-control{
+	  z-index: 20;
+	}
+  }
+
+  .price{
+	padding-top: 30px;
+
+	h2 {
+	  padding-bottom: 40px;
+	  @extend .h2
+	}
+
+	.price__item{
+	  margin-bottom: 50px;
+
+	  a{
+
+		.price__item_h4{
+		  font-family: "PlayRegular", sans-serif;
+		  color: $select-text-color;
+		  font-size: $font-size-h4;
+		  margin-bottom: 0;
+		  font-weight: 400;
+		  text-align: center;
+		}
+
+	  }
+	  span{
+		font-family: "PlayRegular", sans-serif;
+		color: $select-base-color;
+		font-size: $font-size-h4;
+		font-weight: 400;
+		text-align: center;
+
+		.rubl{
+		  font-family: 'als_rublregular', sans-serif;
+		  color: $select-base-color;
+		  font-size: $font-size-base;
+		}
+	  }
+	}
+	.delivery{
+
+	  p{
+		font-family: PlayRegular, sans-serif;
+		color: $select-text-color;
+		font-size: $font-size-other;
+		font-weight: 400;
+		text-align: left;
+		margin-top: -3px;
+		line-height: 19px;
+	  }
+
+	  .rubl_g{
+		font-family: 'als_rublregular', sans-serif;
+		color: $select-text-color;
+		font-size: $font-size-small;
+	  }
+
+	}
+  }
+
+  .guarantee{
+	background: url("../../img/bg_content.png") no-repeat;
+	height: 700px;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-top: 80px;
+
+	h1{
+	  position: absolute;
+	  top: 210px;
+	  text-align: right;
+	  @extend .h1
+	}
+  }
+
+  .work{
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	h2{
+	  padding-bottom: 100px;
+	  @extend .h2
+	}
+
+	.work__item_eco, .work__item_deliver, .work__item_sew, .work__item_grt {
+	  width: 100%;
+	  text-align: center;
+
+	  img{
+		cursor: pointer;
+	  }
+
+	  h5{
+		@extend .h5
+	  }
+	}
+
+  }
+  .map {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	.map__block {
+	  margin:0 auto 50px;
+	  width: 100%;
+	  max-width: 1170px;
+	}
+  }
+  .btn_wrap {
+	@extend .btn_wrap
+  }
+  .social__icons{
+	margin-top: 40px;
+
+	.social__icons_fb, .social__icons_in, .social__icons_vk{
+	  float: left;
+	  text-align: center;
+	  width: 33%;
+	}
+  }
+}
+
+.accordion{
+
+  p.crumbs{
+	@extend .crumbs
+  }
+  h3 {
+	color: $select-heading-color;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 40px;
+	@extend .h3
+  }
+
+  .btn_wrap{
+	@extend .btn_wrap
+  }
+
+  h4{
+	font-family: "PlayRegular", sans-serif;
+	font-size: $font-size-menu;
+  }
+  .panel-body{
+	font-family: "PlayRegular", sans-serif;
+	font-size: $font-size-other;
+  }
+
+  .panel-default>.panel-heading+.panel-collapse>.panel-body {
+	border-top-color: transparent;
+  }
+  .glyphicon {
+	margin-right: 15px;
+	font-size: 17px;
+	color: white;
+	display: block;
+	padding: 10px 12px;
+	background-color: $select-base-color;
+	top: -10px;
+	left: -14px;
+  }
+
+  a:focus, a:hover {
+	color: $select-heading-color;
+	text-decoration: none;
+  }
+  :focus {
+	border-color: transparent;
+  }
+  .panel {
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: none;
+	border-radius: 4px;
+	box-shadow: none;
+  }
+
+  .form_button{
+	margin-top: 20px;
+  }
+
+  .btn, .btn:visited {
+	padding: 6px 25px;
+	font-size: 17px;
+  }
+
+
+}
+
+.work{
+
+  .registration{
+	float: right;
+
+	a {
+	  color: $select-heading-color;
+	  font-size: 12px;
+	  border-bottom: 1px dashed;
+	  outline: none;
+	}
+  }
+
+  p.crumbs{
+	@extend .crumbs
+  }
+
+  h3{
+	color: $select-heading-color;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 40px;
+	margin-left: 0;
+	@extend .h3
+  }
+
+
+
+  .work__block_order{
+	background: url("../../img/item_order_light.png") no-repeat;
+	height: 341px;
+	width: 100%;
+	margin-left: -15px;
+  }
+
+  .work__block_go{
+	background: url("../../img/item_go_light.png") no-repeat;
+	height: 341px;
+	width: 100%;
+	margin-left: 0;
+  }
+
+  .work__block_sew{
+	background: url("../../img/item_delivery_light.png") no-repeat;
+	height: 341px;
+	width: 100%;
+	margin-left: -15px;
+  }
+  .work__block_garant{
+	background: url("../../img/item_order_light.png") no-repeat;
+	height: 341px;
+	width: 100%;
+	margin-left: 15px;
+  }
+
+  .work__block_clean{
+	background: url("../../img/ReClean.jpg") no-repeat;
+	height: 341px;
+	width: 100%;
+	margin-left: -15px;
+  }
+
+  h4#deliver, h4#order, h4#go{
+	font-family: "PlayRegular", sans-serif;
+	margin-left: 0;
+  }
+
+  h4#go, h4#deliver{
+	margin-top: 20px;
+  }
+
+  p {
+	font-family: "PlayRegular", sans-serif;
+	margin: 0 5px 10px 0;
+  }
+
+}
+
+.tabs {
+
+  p.crumbs {
+	@extend  .crumbs
+  }
+
+  h3 {
+	color: $select-heading-color;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 40px;
+	@extend .h3
+  }
+
+  ul {
+
+	li {
+
+	  a {
+		font-family: "PlayRegular", sans-serif;
+		font-size: $font-family-base;
+		text-transform: uppercase;
+		color: $select-heading-color;
+
+	  }
+
+	}
+  }
+  .tab-content {
+	font-family: "PlayRegular", sans-serif;
+  }
+  .nav-tabs {
+	border-bottom: none;
+  }
+  ul.nav.nav-tabs {
+	border-bottom: 1px solid lightgray;
+  }
+
+  .nav-tabs > li {
+	margin-bottom: 9px;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #555;
+	background-color: rgb(238, 238, 238);
+	border-bottom-color: transparent;
+	cursor: default;
+  }
+
+}
+
+.gift {
+  p.crumbs{
+	@extend .crumbs
+  }
+
+  h3{
+	color: $select-heading-color;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 40px;
+	@extend .h3
+  }
+
+  p.text_slogan{
+	font-family: "PlayRegular", sans-serif;
+	color: $select-text-color;
+	font-size: $font-size-other;
+  }
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-top: 1px solid #eee;
+}

@@ -1,0 +1,23 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize-css/normalize.css";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/owl-carousel/owl-carousel/owl.carousel.css";
+@import "../../bower_components/owl-carousel/owl-carousel/owl.theme.css";
+@import "../../bower_components/magnific-popup/dist/magnific-popup.css";
+@import "../../bower_components/tooltipster/css/tooltipster.css";
+@import "../../bower_components/tooltipster/css/themes/tooltipster-shadow.css";
+
+/*
+* Custom main
+*/
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/buttons";
+@import "partials/mixins";
+@import "partials/forms";
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";
+@import "partials/media";

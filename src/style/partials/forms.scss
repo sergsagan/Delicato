@@ -1,0 +1,423 @@
+textarea {
+  resize: none;
+  overflow: auto;
+}
+.hidden{
+  display: none;
+}
+
+//zakaz
+
+#form, #faq_form {
+  padding: 20px;
+  background-color: $select-content-color;
+  max-width: 360px;
+  margin: auto;
+  position: relative;
+
+  h3{
+    font-family: "PTSansRegular", sans-serif;
+    font-size: $font-size-h4;
+    line-height: $font-size-h4;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  input{
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 30px;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    text-indent: 10px;
+    font-size: 15px;
+  }
+
+}
+
+#faq_form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #d9d9d9;
+  text-indent: 10px;
+  font-size: 15px;
+}
+
+//Login
+
+#form-login{
+  padding: 40px;
+  background-color: $select-content-color;
+  max-width: 350px;
+  margin: auto;
+  position: relative;
+
+  h3{
+    font-family: "PTSansRegular", sans-serif;
+    font-size: $font-size-h4;
+    line-height: $font-size-h4;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  input{
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 30px;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    text-indent: 10px;
+    font-size: 15px;
+  }
+  label.left-text{
+    float: right;
+    a {
+      border-bottom: 1px dashed;
+      color: #999;
+      font-weight: 400;
+    }
+  }
+  
+  label{
+    color: #999;
+    font-weight: 400;
+  }
+
+  input[type=checkbox] {
+    width: auto;
+    margin: -7px 4px 0 0;
+    padding: 2px;
+    float: left;
+    outline: none;
+  }
+
+  .key{
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+}
+
+//Parol
+#form-parol{
+  padding: 40px;
+  background-color: $select-content-color;
+  max-width: 350px;
+  margin: auto;
+  position: relative;
+
+  h3{
+    font-family: "PTSansRegular", sans-serif;
+    font-size: $font-size-h4;
+    line-height: $font-size-h4;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  input{
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 30px;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    text-indent: 10px;
+    font-size: 15px;
+  }
+  label.left-text{
+    float: right;
+    a {
+      border-bottom: 1px dashed;
+      color: #999;
+      font-weight: 400;
+    }
+  }
+  .key{
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+}
+
+a.popup.registr {
+  color: #999;
+  font-size: 15px;
+  border-bottom: 1px dashed;
+}
+
+//Registration
+#form-registration{
+  padding: 40px;
+  background-color: $select-content-color;
+  max-width: 350px;
+  margin: auto;
+  position: relative;
+
+  h3{
+    font-family: "PTSansRegular", sans-serif;
+    font-size: $font-size-h4;
+    line-height: $font-size-h4;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  input{
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 30px;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    text-indent: 10px;
+    font-size: 15px;
+  }
+
+  input[type=checkbox] {
+    width: auto;
+    margin: -8px 4px 0 0;
+    padding: 2px;
+    float: left;
+    outline: none;
+  }
+  label{
+    font-size: 12px;
+    margin-top: 30px;
+    font-weight: 400;
+    a{
+      color: $select-base-color;
+      outline: none;
+    }
+  }
+  input[type=submit] {
+    padding: 4px 28px;
+    border-radius: 4px;
+    background: $select-base-color;
+    outline: none !important;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-family: Exo2Regular, sans-serif;
+    color: $select-content-color;
+    font-size: $font-size-menu;
+    text-align: center;
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
+    border: none;
+    margin-bottom: 20px;
+    @extend .menu-style;
+  }
+
+  .tooltip-inner {
+    white-space:pre;
+    max-width:none;
+  }
+  .bg-success, .bg-danger{
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+}
+
+#modal{
+  top:210px;
+}
+
+//Gift
+
+// SASS Style Controls
+$hover-bg: #999999;
+$hover-text: white;
+$alert-success: #0099cc;
+$alert-fail: #cd3333;
+
+
+
+// General Styles
+#form-container {
+  max-width: 320px;
+  min-width: 320px;
+  margin: 30px auto;
+  padding: 20px;
+  border: solid 1px #cccccc;
+  background: transparent;
+  border-radius: 6px;
+  form {
+    .form-checker {
+      display: none;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      label {
+        color: #222222;
+        text-align: left;
+        display: none !important;
+      }
+      .selectList{
+        display: inline-block;
+        width: 100%;
+        float: left;
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #555;
+      }
+      .label_in{
+        display: inline-block;
+      }
+      
+      input, label {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        padding: 20px 20px;
+        font-size: 16px;
+        line-height: 18px;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        &:focus {
+          outline: none;
+          border: solid 1px $hover-bg;
+          background: $hover-bg;
+          color: $hover-text;
+          transition: all 100ms ease-in-out;
+          box-shadow: none;
+          &::-webkit-input-placeholder {
+            color: $hover-text;
+          }
+        }
+      }
+
+        textarea {
+          height: 120px;
+          padding: 20px;
+          font-size: 18px;
+          line-height: 26px;
+          &:focus {
+            outline: none;
+            border: solid 1px $hover-bg;
+            background: $hover-bg;
+            color: $hover-text;
+            transition: all 100ms ease-in-out;
+            box-shadow: none;
+            &::-webkit-input-placeholder {
+              color: $hover-text;
+            }
+          }
+        }
+      }
+      .submit-wrap {
+        padding: 0;
+        position: relative;
+      }
+      .loading {
+        position: absolute;
+        top: -70px;
+        left: 50px;
+        margin-left: -16px;
+        z-index: 1;
+      }
+    }
+    .btn_wrap {
+      width: 100%;
+      text-align: center;
+
+      .btn, .btn:visited {
+        padding: 8px 25px;
+        border: none;
+        border-radius: 5px;
+        background: #2650b6;
+        outline: 0 !important;
+        font-family: Exo2Regular, sans-serif;
+        color: #fff;
+        font-size: 19px;
+        text-align: center;
+        -webkit-transition: .75s;
+        transition: .75s;
+      }
+    }
+    .alert-wrap {
+      padding: 0;
+      .alert-message-wrap {
+        width: 100%;
+        min-height: 10px;
+        color: white;
+        padding: 15px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+        &.alert-success {
+          background: $alert-success;
+        }
+        &.alert-fail {
+          background: $alert-fail;
+        }
+        .alert-message {
+          position: relative;
+          display: inline-block;
+          padding-left: 35px;
+          .fa {
+            font-size: 26px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+          }
+        }
+      }
+    }
+  }
+
+  // Styles intended only for this example
+
+  h3.example-title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  h4.example-subtitle {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 6px;
+    color: #555555;
+  }
+
+  p.instructions {
+    text-align: justify;
+    padding: 20px;
+    line-height: 24px;
+    &.asp, &.php {
+      padding-left: 0;
+      padding-right: 0;
+      strong {
+        color: white;
+        padding: 2px 5px;
+        display: inline-block;
+        margin-right: 6px;
+        border-radius: 5px;
+      }
+    }
+    &.asp strong {
+      background: #213d30;
+      color: #b4d7bf;
+    }
+    &.php strong {
+      background: #000033;
+      color: #c6e2ff;
+    }
+  }
+
+  pre.dark.asp {
+    border: solid 1px #213d30;
+    background: #213d30;
+    color: #b4d7bf;
+  }
+
+  pre.dark.php {
+    background: #000033;
+    color: #c6e2ff;
+    border: solid 1px #000033;
+  }
+
+  h3.example-title, h4.example-subtitle, p.instructions {
+    max-width: 480px;
+    margin: 0 auto;
+    font-family: helvetica-neue, helvetica, sans-serif;
+  }

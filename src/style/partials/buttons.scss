@@ -1,0 +1,127 @@
+@import "variables";
+
+.btn, .btn:visited{
+  padding: 12px 38px;
+  border: none;
+  border-radius: 5px;
+  background: $select-base-color;
+  outline: none !important;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-family: Exo2Regular, sans-serif;
+  color: $select-content-color;
+  font-size: $font-size-h4;
+  text-align: center;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  @extend .menu-style;
+
+  &:hover, &:focus{
+    background: lighten($select-base-color,10%);
+    color: $select-content-color;
+  }
+
+  &:active {
+    background: darken($select-base-color,10%);
+  }
+}
+.btn_order{
+  font-family: "Exo2Regular", sans-serif;
+  color: $select-base-color;
+  font-size: $font-size-h4;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid $select-base-color;
+  border-radius: 6px;
+  padding: 12px 65px;
+  margin-top: 50px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+
+  &:hover{
+    text-decoration: none;
+    color: $select-content-color;
+    background-color: $select-base-color;
+  }
+}
+
+.btn_order_in{
+  font-family: "Exo2Regular", sans-serif;
+  color: $select-content-color;
+  font-size: $font-size-h4;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  background: $select-base-color;
+  border: 1px solid $select-base-color;
+  border-radius: 6px;
+  padding: 6px 20px;
+  margin-top: 50px;
+  outline: none;
+
+  &:hover{
+    text-decoration: none;
+    color: $select-base-color;
+    background-color: $select-content-color;
+  }
+}
+a:focus, a:hover {
+  color: white;
+  text-decoration: none;
+}
+.btn_wrap{
+  width: 100%;
+  text-align: center;
+
+  .btn__form_login{
+    padding: 4px 28px;
+    border-radius: 4px;
+    background: $select-base-color;
+    outline: none !important;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-family: Exo2Regular, sans-serif;
+    color: $select-content-color;
+    font-size: $font-size-menu;
+    text-align: center;
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
+    border: none;
+    margin-bottom: 20px;
+    @extend .menu-style;
+  }
+}
+
+.btn_wrap{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+  .btn__form_parol{
+    padding: 4px 28px;
+    border-radius: 4px;
+    background: $select-base-color;
+    outline: none !important;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-family: Exo2Regular, sans-serif;
+    color: $select-content-color;
+    font-size: $font-size-menu;
+    text-align: center;
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
+    border: none;
+    margin-bottom: 20px;
+    @extend .menu-style;
+  }
+}
+
+.btn_wrap{
+  .btn {
+    margin-bottom: 20px;
+  }
+}

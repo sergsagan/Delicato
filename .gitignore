@@ -1,0 +1,6 @@
+# Created by .ignore support plugin
+.idea
+bower_components
+node_modules
+/build
+

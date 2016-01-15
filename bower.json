@@ -1,0 +1,20 @@
+{
+  "name": "frontend_start",
+  "version": "1.0.0",
+  "authors": [
+    "sergey <sergey.martynuk@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "bootstrap-sass": ""
+  }
+}
