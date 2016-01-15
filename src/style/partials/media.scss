@@ -1684,6 +1684,10 @@
   .header {
 	height: 750px;
 
+	.navbar-default .navbar-collapse ul.navbar-nav {
+	  margin-left: 110px;
+	}
+
 	.sticky .navbar-default {
 	  background-color: #ffffff;
 	  opacity: 0.95;
@@ -1707,6 +1711,10 @@
   .header_new {
 
 	.navbar-default {
+
+	  .navbar-collapse ul.navbar-nav {
+		margin-left: 110px;
+	  }
 
 	  .navbar-header {
 
