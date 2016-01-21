@@ -27,7 +27,6 @@ html, body{
   width: $layout-width;
   max-width: $layout-max-width;
   text-align: center;
-  padding-top: 17px;
   position: relative;
   margin: 0 auto;
 
@@ -161,7 +160,6 @@ html, body{
   width: $layout-width;
   max-width: $layout-max-width;
   text-align: center;
-  padding-top: 10px;
   position: relative;
 
   .navbar-default {
@@ -271,8 +269,142 @@ html, body{
     opacity: 0.95;
     filter: alpha(Opacity=95);
     z-index: 1000;
-    height: auto;
+    height: 78px;
   }
+  .sticky-wrapper{
+    height: 78px!important;
+  }
+}
+
+.header_gift {
+  height: 800px;
+  background: url("../../img/podarok.jpg") no-repeat center top;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: $layout-width;
+  max-width: $layout-max-width;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  opacity: .9;
+
+  .navbar {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 1000;
+    margin-top: 0;
+    width: 100%;
+
+    .navbar-header {
+
+      .header-phone {
+        float: right;
+        margin-top: 23px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        a {
+          font-family: "PlayBold", sans-serif;
+          color: $select-content-color;
+          font-size: $font-size-h4;
+          text-align: center;
+          z-index: 1200;
+          transform: scaleX(1.0014);
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
+    .navbar-toggle {
+      position: relative;
+      float: right;
+      margin-right: 15px;
+      padding: 9px 10px;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      background-color: $select-content-color;
+      border: 1px solid $select-content-color;
+      border-radius: 4px;
+    }
+
+    .collapse {
+      background-color: transparent;
+      margin: 0;
+    }
+
+    .navbar-collapse {
+
+      ul.navbar-nav {
+        margin-top: 23px;
+        margin-left: 95px;
+        list-style: none;
+
+        li {
+          margin-left: -11px;
+
+          a {
+            font-family: "PlayRegular", sans-serif;
+            font-size: $font-size-menu;
+            z-index: 1200;
+            font-weight: 400;
+            line-height: 26px;
+            text-decoration: none;
+            color: $select-content-color;
+            cursor: pointer;
+
+            &:hover {
+              -webkit-transition: 0.75s;
+              transition: 0.75s;
+              color: darken($select-content-color,30%);
+              background: transparent;
+            }
+          }
+        }
+        li.login {
+          margin-top: 0;
+          margin-left: 10px;
+
+          a.log {
+            font-family: "PlayRegular", sans-serif;
+            color: $select-content-color;
+            font-size: $font-size-small;
+            border: 1px solid $select-content-color;
+            border-radius: 6px;
+            padding: 3px 10px;
+            margin-top: 4px;
+            text-align: center;
+            outline: none;
+            z-index: 1200;
+            font-weight: 400;
+            line-height: 26px;
+
+            &:hover {
+              -webkit-transition: 0.75s;
+              transition: 0.75s;
+              background-color: $select-content-color;
+              color: $select-heading-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  h3{
+    color: $select-content-color;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    @extend .h3
+  }
+
+  p.text_slogan{
+    font-family: "PlayRegular", sans-serif;
+    color: $select-content-color;
+    font-size: $font-size-menu;
+    margin-top: 50px;
+  }
+
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {

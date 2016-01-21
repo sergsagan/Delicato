@@ -223,6 +223,58 @@ a.popup.registr {
 }
 
 //Gift
+* {
+  box-sizing: border-box;
+}
+.select {
+  position: relative;
+  cursor: pointer;
+  width: 278px;
+  float: left;
+}
+.select .selected {
+  width: 100%;
+  height: 42px;
+  display: block;
+  padding: 0 27px 0 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  line-height: 42px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  color: #555;
+  opacity: .9;
+}
+.select ul {
+  width: 100%;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.select .focus {
+  border-radius: 3px 3px 0 0;
+}
+.select li {
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+}
+.select select {
+  display: none;
+}
+
+
+
 
 // SASS Style Controls
 $hover-bg: #999999;
@@ -252,6 +304,9 @@ $alert-fail: #cd3333;
         text-align: left;
         display: none !important;
       }
+      .form-control{
+        height: 40px;
+      }
       .selectList{
         display: inline-block;
         width: 100%;
@@ -259,6 +314,13 @@ $alert-fail: #cd3333;
         padding: 8px 20px;
         font-size: 16px;
         line-height: 18px;
+        color: #555;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      option{
         color: #555;
       }
       .label_in{

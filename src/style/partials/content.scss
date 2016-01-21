@@ -278,7 +278,7 @@
 	.social__icons_fb, .social__icons_in, .social__icons_vk{
 	  float: left;
 	  text-align: center;
-	  width: 33%;
+	  width: 50%;
 	}
   }
 }
@@ -351,6 +351,7 @@
 }
 
 .work{
+  margin-bottom: 50px;
 
   .registration{
 	float: right;
@@ -366,7 +367,12 @@
   p.crumbs{
 	@extend .crumbs
   }
-
+  .paddings{
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 10px;
+	margin-right: -10px;
+  }
   h3{
 	color: $select-heading-color;
 	text-align: left;
@@ -379,51 +385,49 @@
 
 
   .work__block_order{
-	background: url("../../img/item_order_light.png") no-repeat;
+	background: url("../../img/delivery_new.jpg") no-repeat;
 	height: 341px;
 	width: 100%;
-	margin-left: -15px;
   }
 
-  .work__block_go{
-	background: url("../../img/item_go_light.png") no-repeat;
+  .work__block_eco{
+	background: url("../../img/eco.jpg") no-repeat;
 	height: 341px;
 	width: 100%;
-	margin-left: 0;
+
   }
 
   .work__block_sew{
-	background: url("../../img/item_delivery_light.png") no-repeat;
+	background: url("../../img/sew.jpg") no-repeat;
 	height: 341px;
 	width: 100%;
-	margin-left: -15px;
   }
   .work__block_garant{
-	background: url("../../img/item_order_light.png") no-repeat;
-	height: 341px;
-	width: 100%;
-	margin-left: 15px;
-  }
-
-  .work__block_clean{
 	background: url("../../img/ReClean.jpg") no-repeat;
 	height: 341px;
 	width: 100%;
-	margin-left: -15px;
   }
 
-  h4#deliver, h4#order, h4#go{
+  .work__block_text{
+
+	h4#go, h4#garant{
+	  margin-left: 10px;
+	}
+	p.eco, p.garant{
+	  font-family: "PlayRegular", sans-serif;
+	  margin: 0 0 0 10px;
+	}
+  }
+
+  h4#go, h4#garant, h4#order, h4#sew {
+	padding-top: 10px;
 	font-family: "PlayRegular", sans-serif;
 	margin-left: 0;
-  }
-
-  h4#go, h4#deliver{
-	margin-top: 20px;
   }
 
   p {
 	font-family: "PlayRegular", sans-serif;
-	margin: 0 5px 10px 0;
+	margin: 0 0 0 0;
   }
 
 }
@@ -478,23 +482,35 @@
 
 }
 
-.gift {
-  p.crumbs{
-	@extend .crumbs
+.contacty{
+
+  .service-block {
+	margin-bottom: 30px;
+	margin-left: -15px;
+
+	.salon-capt {
+	  margin-bottom: 20px;
+	  a {
+		font-family: PlayRegular, sans-serif;
+		color: #494a5f;
+		font-size: 18px;
+	  }
+	  &:focus, &:hover {
+		color: #494a5f;
+		text-decoration: none;
+		outline: none!important;
+	  }
+	  a:focus {
+		outline: none;
+		outline: -webkit-focus-ring-color auto 0;
+		outline-offset: 0;
+	  }
+	}
   }
 
-  h3{
-	color: $select-heading-color;
-	text-align: left;
-	margin-top: 5px;
-	margin-bottom: 40px;
-	@extend .h3
-  }
-
-  p.text_slogan{
-	font-family: "PlayRegular", sans-serif;
-	color: $select-text-color;
-	font-size: $font-size-other;
+  .modal-dialog {
+	max-width: 750px;
+	width: 100%;
   }
 }
 

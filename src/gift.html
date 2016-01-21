@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Подарок / Delicato</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+//= template/header_gift.html
+
+<section class="section gift">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="form-container" class="clearfix">
+					<form id="ctsForm" role="form" name="ctsForm" onsubmit="return validateForm()" class="clearfix">
+						<div class="form-group clearfix">
+							<label class="label">ФИО отправителя</label>
+							<input placeholder="ФИО отправителя" name="name" type="text" required class="form-control">
+						</div>
+						<div class="form-group clearfix">
+							<label class="label">ФИО получателя</label>
+							<input placeholder="ФИО получателя" name="name" type="text" required class="form-control">
+						</div>
+						<div class="form-group clearfix">
+							<div class="select">
+								<div class="selected"></div>
+								<ul class="list"></ul>
+								<select>
+									<option>Номинал карты</option>
+									<option>сертификат на 250 руб</option>
+									<option>сертификат на 500 руб</option>
+									<option>сертификат на 1000 руб</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="btn_wrap">
+								<button type="submit" value="submit" class="btn btn-default btn-submit">Заказать</button>
+							</div>
+						</div>
+						<div class="col-xs-9 alert-wrap"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<hr>
+//= template/footer.html
+</body>
+</html>
