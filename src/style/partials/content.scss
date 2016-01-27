@@ -15,8 +15,8 @@
 	  @extend .h2
 	}
 	.col-lg-4{
-	  padding-right:0;
-	  padding-left: 0;
+	  padding-right: 15px;
+	  padding-left: 15px;
 
 	  .advantages__item_order {
 		background: url("../../img/item_order.png") no-repeat center center;
@@ -232,7 +232,13 @@
 	  position: absolute;
 	  top: 210px;
 	  text-align: right;
-	  @extend .h1
+	  @extend .h1;
+	  a{
+		color: $select-menu-color;
+		&:hover{
+		  color: lighten($select-menu-color,20%);
+		}
+	  }
 	}
   }
 
