@@ -29,7 +29,7 @@
 		}
 	  }
 
-	  .collapse {
+	  .collapse, .collapsing {
 		background-color: white;
 		opacity: .95;
 		margin: 0 -16px;
@@ -114,7 +114,7 @@
 		}
 	  }
 
-	  .collapse {
+	  .collapse, .collapsing  {
 		background-color: white;
 		opacity: .95;
 		margin: 0 -15px;
@@ -190,7 +190,7 @@
 		}
 	  }
 
-	  .collapse {
+	  .collapse, .collapsing  {
 		background-color: white;
 		opacity: .95;
 		margin: 0 -15px;
@@ -651,7 +651,7 @@
 
 
 	  .navbar-header {
-		margin-bottom: 0;
+		margin-bottom: 15px;
 
 		.navbar-brand{
 		  margin-bottom: 0;
@@ -671,8 +671,8 @@
 
 	  }
 
-	  .collapse {
-		margin: 16px -16px;
+	  .collapse, .collapsing  {
+		margin: 0 -16px;
 
 		ul {
 
@@ -733,7 +733,7 @@
 		}
 	  }
 
-	  .collapse {
+	  .collapse, .collapsing  {
 
 		ul {
 
@@ -812,7 +812,7 @@
 		}
 	  }
 
-	  .collapse {
+	  .collapse, .collapsing  {
 
 		ul {
 
