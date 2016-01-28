@@ -64,19 +64,23 @@
 	.sticky .navbar-default {
 	  height: 78px;
 	}
-	h1 {
-	  font-family: "Exo2Regular", sans-serif;
-	  font-size: 26px;
-	  line-height: 27px;
-	  padding-bottom: 25px;
-	  padding-top: 25px;
+	.header-content{
+	  position: relative;
+	  width: 100%;
+	  padding: 30px 15px;
+	  text-align: center;
 
-	}
+	  h1 {
+		font-family: "Exo2Regular", sans-serif;
+		padding-bottom: 15px;
+	  }
 
-	.btn, .btn:visited {
-	  padding: 7px 14px;
-	  font-size: 17px;
-	  margin-bottom: 20px;
+	  .btn, .btn:visited {
+		padding: 7px 14px;
+		font-size: 17px;
+		margin-bottom: 20px;
+	  }
+
 	}
   }
 
@@ -434,8 +438,6 @@
 	margin-top: 40px;
 
 	h1 {
-	  font-size: 20px;
-	  line-height: 30px;
 	  text-align: right;
 	  top: 65px;
 	  right: 5px;
@@ -645,7 +647,7 @@
 @media (min-width: 480px) {
 
   .header {
-	height: 400px;
+	height: 420px;
 
 	.navbar-default {
 
@@ -702,12 +704,11 @@
 	.sticky .navbar-default {
 	  height: 78px;
 	}
-
-	h1 {
-	  padding-top: 60px;
-
+	.header-content{
+	  padding: 80px 15px;
+	  h1 {
+	  }
 	}
-
   }
 
   .header_new {
@@ -769,7 +770,6 @@
 	}
 
 	h1 {
-	  font-size: 26px;
 	  line-height: $font-size-h4;
 	  padding-bottom: 25px;
 	  padding-top: 25px;
@@ -943,8 +943,6 @@
 	margin-top: 40px;
 
 	h1 {
-	  font-size: 24px;
-	  line-height: 28px;
 	  text-align: right;
 	  top: 84px;
 	  right: 20px;
@@ -1092,7 +1090,7 @@
 
 @media (min-width: 768px) {
   .header {
-	height: 520px;
+	height: 545px;
 
 	.navbar-default {
 
@@ -1144,16 +1142,19 @@
 		}
 	  }
 	}
-	h1{
-	  font-family: Exo2Bold,sans-serif;
-	  font-size: 35px;
-	  line-height: $font-size-h3;
-	  padding-top: 100px;
+	.header-content{
+	  padding: 135px 15px;
 
-	}
-	.btn, .btn:visited {
-	  padding: 12px 30px;
-	  font-size: 22px;
+	  h1{
+		font-family: Exo2Bold,sans-serif;
+		padding-bottom: 30px;
+
+	  }
+	  .btn, .btn:visited {
+		padding: 12px 30px;
+		font-size: 22px;
+	  }
+
 	}
   }
 
@@ -1337,8 +1338,6 @@
 	margin-top: 40px;
 
 	h1 {
-	  font-size: 30px;
-	  line-height: 35px;
 	  text-align: right;
 	  top: 105px;
 	}
@@ -1566,7 +1565,7 @@
 
 @media (min-width: 992px) {
   .header {
-	height: 600px;
+	height: 620px;
 
 	.navbar-default {
 
@@ -1609,17 +1608,18 @@
 		  }
 	  }
 	}
+	.header-content{
+	  padding: 175px 15px;
 
-	h1 {
-	  font-size: $font-size-h2;
-	  line-height: $font-size-h2;
-	  padding-bottom: 55px;
-	  padding-top: 150px;
+	  h1 {
+		padding-bottom: 60px;
+	  }
+	  .btn, .btn:visited {
+		padding: 12px 38px;
+	  }
 
 	}
-	.btn, .btn:visited {
-	  padding: 12px 38px;
-	}
+
   }
 
   .header_new {
@@ -1826,8 +1826,6 @@
 	height: 460px;
 
 	h1 {
-	  font-size: 42px;
-	  line-height: 50px;
 	  text-align: right;
 	  top: 105px;
 	}
@@ -2012,16 +2010,17 @@
 	  z-index: 1000;
 	  height: 78px;
 	}
+	.header-content{
+	  padding: 255px 15px;
 
-	h1 {
-	  font-size: $font-size-h1;
-	  line-height: $font-size-h1;
-	  padding-top: 265px;
-	  padding-bottom: 98px;
-	}
-	.btn {
-	  padding: 12px 38px;
-	  font-size: $font-size-h4;
+	  h1 {
+		padding-bottom: 100px;
+	  }
+	  .btn {
+		padding: 12px 38px;
+		font-size: $font-size-h4;
+	  }
+
 	}
   }
 
@@ -2093,9 +2092,7 @@
 	h1 {
 	  font-family: Exo2Medium, sans-serif;
 	  color: $select-heading-color;
-	  font-size: $font-size-h1;
 	  font-weight: 500;
-	  line-height: 70px;
 	  text-align: right;
 	  text-transform: uppercase;
 	  position: absolute;

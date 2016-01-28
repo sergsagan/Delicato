@@ -141,18 +141,17 @@ html, body{
     z-index: 1000;
     height: auto;
   }
+  .header-content{
 
-  h1{
-    font-family: Exo2Bold, sans-serif;
-    color: $select-heading-color;
-    font-size: $font-size-h1;
-    font-weight: 700;
-    line-height: $font-size-h1;
-    padding-top: 265px;
-    text-align: center;
-    text-shadow: 0 0 21px rgba(255, 255, 255, 0.89);
-    text-transform: uppercase;
-    padding-bottom: 98px;
+    h1{
+      font-family: Exo2Bold, sans-serif;
+      color: $select-heading-color;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 0 0 21px rgba(255, 255, 255, 0.89);
+      text-transform: uppercase;
+    }
+
   }
 }
 
@@ -280,7 +279,7 @@ html, body{
 
 .header_gift {
   height: 800px;
-  background: url("../../img/podarok.jpg") no-repeat center top;
+  background: url("../../img/podarok.png") no-repeat center top;
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;

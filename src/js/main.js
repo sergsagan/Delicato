@@ -19,6 +19,7 @@
 //= partials/jquery.sticky.js
 //= partials/maskedinput.min.js
 //= partials/jquery.validate.min.js
+//= partials/jquery.fittext.js
 
 
 

@@ -58,6 +58,14 @@ $(document).ready(function() {
 
 	$(".popup").magnificPopup();
 
+	// Fit Text Plugin for Main Header
+	$("h1").fitText(
+		1.2, {
+			minFontSize: '26px',
+			maxFontSize: '50px'
+		}
+	);
+
 	$("#form").submit(function() {
 		$.ajax({
 			type: "POST",
