@@ -265,9 +265,14 @@
 	}
 
   }
+
   .map {
 	padding-top: 30px;
 	padding-bottom: 30px;
+
+	h2{
+	  @extend .h2
+	}
 
 	.map__block {
 	  margin:0 auto 50px;
@@ -275,9 +280,11 @@
 	  max-width: 1170px;
 	}
   }
+
   .btn_wrap {
 	@extend .btn_wrap
   }
+
   .social__icons{
 	margin-top: 40px;
 
@@ -310,14 +317,15 @@
 	font-family: "PlayRegular", sans-serif;
 	font-size: $font-size-menu;
   }
-  .panel-body{
-	font-family: "PlayRegular", sans-serif;
-	font-size: $font-size-other;
-  }
 
   .panel-default>.panel-heading+.panel-collapse>.panel-body {
 	border-top-color: transparent;
   }
+
+  .collapsing{
+	display: none;
+  }
+
   .glyphicon {
 	margin-right: 15px;
 	font-size: 17px;
@@ -489,6 +497,9 @@
 }
 
 .contacty{
+  p.inf{
+	margin-bottom: 30px;
+  }
 
   .service-block {
 	margin-bottom: 30px;
@@ -510,6 +521,11 @@
 		outline: none;
 		outline: -webkit-focus-ring-color auto 0;
 		outline-offset: 0;
+	  }
+	  p{
+		font-family: "Exo2Medium", sans-serif;
+		color: $select-heading-color;
+		font-size: 17px;
 	  }
 	}
   }
